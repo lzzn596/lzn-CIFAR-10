@@ -38,19 +38,3 @@ pip install pandas torch torchvision d2l
 2. 运行数据预处理脚本，组织数据结构。
 3. 运行训练脚本，进行模型训练和验证。
 4. 运行测试脚本，进行模型预测并保存结果。
-
-## 示例
-```bash
-# 下载数据集
-python scripts/download_data.py
-
-# 数据预处理
-python scripts/preprocess_data.py
-
-# 训练模型
-python scripts/train_model.py
-
-# 测试模型并保存结果
-python scripts/test_model.py
-```
-

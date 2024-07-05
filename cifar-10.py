@@ -18,7 +18,7 @@ from d2l import torch as d2l
 d2l.DATA_HUB['cifar10_tiny'] = (d2l.DATA_URL + 'kaggle_cifar10_tiny.zip', '2068874e4b9a9f0fb07ebe0ad2b29754449ccacd')
 
 # 使用完整数据集时设置demo为False
-demo = True
+demo = False
 if demo:
     data_dir = d2l.download_extract('cifar10_tiny')
 else:
@@ -415,8 +415,10 @@ if len(devices) == 0:
 print(f"Using devices: {devices}")
 
 # 设置训练参数
-num_epochs, lr, wd = 50, 2e-4, 5e-4
-lr_period, lr_decay = 4, 0.9
+# num_epochs, lr, wd = 50, 2e-4, 5e-4
+# lr_period, lr_decay = 4, 0.9
+num_epochs, lr, wd = 100, 1e-4, 5e-4
+lr_period, lr_decay = 50, 0.1
 net = get_net()
 
 # 训练模型
